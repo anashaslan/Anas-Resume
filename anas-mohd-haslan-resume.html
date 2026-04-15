@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anas Mohd Haslan — Resume</title>
+<meta name="description" content="Resume of Anas Mohd Haslan — Data Science Professional and Front-End Developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{
+  --bg:#f5f6f7;--surface:#ffffff;--s2:#f8f9fa;--soff:#eef0f3;
+  --div:#e2e5ea;--bdr:#d5d9e0;
+  --tx:#1a1d23;--mu:#5a6272;--fa:#9aa0ad;--inv:#f5f6f7;
+  --pr:#0e7069;--prh:#0a5650;--prl:#e6f4f3;
+  --ac:#1e3a5f;--acl:#e8eef5;
+  --cr:#2c6fad;--crb:#e8f1f9;
+  --ct:#7a4fa3;--ctb:#f2ecf9;
+  --cw:#0e7069;--cwb:#e6f4f3;
+  --cd:#b35c00;--cdb:#fdf0e3;
+  --cn:#6b7280;--cnb:#f3f4f6;
+  --sh1:0 1px 3px rgba(26,29,35,.06);
+  --sh2:0 4px 12px rgba(26,29,35,.08);
+  --sh3:0 8px 28px rgba(26,29,35,.10);
+  --rsm:.375rem;--rmd:.5rem;--rlg:.75rem;--rxl:1rem;--rfull:9999px;
+  --tr:180ms cubic-bezier(.16,1,.3,1);
+  --ff:'DM Sans',system-ui,sans-serif;
+  --fm:'DM Mono','Fira Code',monospace;
+  --xs:clamp(.75rem,.7rem + .25vw,.8125rem);
+  --sm:clamp(.8125rem,.75rem + .3vw,.9375rem);
+  --bs:clamp(.9375rem,.875rem + .25vw,1.0625rem);
+  --lg:clamp(1.125rem,1rem + .5vw,1.3125rem);
+  --xl:clamp(1.375rem,1.1rem + 1vw,1.75rem);
+  --h:clamp(2.25rem,1rem + 4vw,3.5rem);
+}
+[data-theme="dark"]{
+  --bg:#111318;--surface:#181b20;--s2:#1d2027;--soff:#22262d;
+  --div:#2a2e38;--bdr:#353942;
+  --tx:#e2e5ea;--mu:#8a92a0;--fa:#555d6b;--inv:#111318;
+  --pr:#3eb8ae;--prh:#2ca19a;--prl:#1a2e2d;
+  --ac:#5b8dbf;--acl:#1a2333;
+  --cr:#5b8dbf;--crb:#1a2535;--ct:#a07fd4;--ctb:#261e38;
+  --cw:#3eb8ae;--cwb:#162524;--cd:#e08d3c;--cdb:#2a1e0e;
+  --cn:#9ca3af;--cnb:#22262d;
+  --sh1:0 1px 3px rgba(0,0,0,.25);--sh2:0 4px 12px rgba(0,0,0,.35);--sh3:0 8px 28px rgba(0,0,0,.45);
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){
+  --bg:#111318;--surface:#181b20;--s2:#1d2027;--soff:#22262d;
+  --div:#2a2e38;--bdr:#353942;--tx:#e2e5ea;--mu:#8a92a0;--fa:#555d6b;
+  --inv:#111318;--pr:#3eb8ae;--prh:#2ca19a;--prl:#1a2e2d;
+  --ac:#5b8dbf;--acl:#1a2333;--cr:#5b8dbf;--crb:#1a2535;--ct:#a07fd4;
+  --ctb:#261e38;--cw:#3eb8ae;--cwb:#162524;--cd:#e08d3c;--cdb:#2a1e0e;
+  --cn:#9ca3af;--cnb:#22262d;
+  --sh1:0 1px 3px rgba(0,0,0,.25);--sh2:0 4px 12px rgba(0,0,0,.35);--sh3:0 8px 28px rgba(0,0,0,.45);
+}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:none;text-size-adjust:none;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{min-height:100dvh;font-family:var(--ff);font-size:var(--bs);color:var(--tx);background:var(--bg);line-height:1.6}
+img,svg{display:block;max-width:100%}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
+a,button{transition:color var(--tr),background var(--tr),border-color var(--tr),opacity var(--tr)}
+a{text-decoration:none}
+::selection{background:color-mix(in oklab,var(--pr) 20%,transparent);color:var(--tx)}
+:focus-visible{outline:2px solid var(--pr);outline-offset:3px;border-radius:var(--rsm)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{
+  .topbar,.pbtn,.ttog{display:none!important}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .wrap{padding:0;max-width:100%}
+  .card,.pc,.scard{box-shadow:none;border:1px solid #ddd;break-inside:avoid}
+  a{color:#000}
+  .xi{break-inside:avoid}
+}
+/* TOPBAR */
+.topbar{position:sticky;top:0;z-index:100;background:color-mix(in oklab,var(--surface) 93%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--div);padding:.6rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.tbl{display:flex;align-items:center;gap:.75rem}
+.tbname{font-size:var(--sm);font-weight:600;letter-spacing:-.01em}
+.tbrole{font-size:var(--xs);color:var(--mu)}
+.tbr{display:flex;align-items:center;gap:.75rem}
+.ibtn{width:34px;height:34px;border-radius:var(--rfull);display:flex;align-items:center;justify-content:center;color:var(--mu);border:1px solid var(--bdr);background:var(--surface)}
+.ibtn:hover{color:var(--tx);background:var(--soff)}
+.pbtn{display:flex;align-items:center;gap:.4rem;font-size:var(--xs);font-weight:500;color:var(--mu);padding:.35rem .7rem;border:1px solid var(--bdr);border-radius:var(--rmd);background:var(--surface)}
+.pbtn:hover{color:var(--pr);border-color:var(--pr)}
+.logo{width:28px;height:28px;flex-shrink:0}
+/* WRAP */
+.wrap{max-width:900px;margin:0 auto;padding:2rem 1.5rem 5rem}
+/* HERO */
+.hero{background:var(--surface);border:1px solid var(--div);border-radius:var(--rxl);box-shadow:var(--sh1);padding:2.5rem;margin-bottom:1.5rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:start}
+@media(max-width:620px){.hero{grid-template-columns:1fr;padding:2rem 1.5rem}}
+.hname{font-size:var(--h);font-weight:700;letter-spacing:-.03em;line-height:1.05;margin-bottom:.5rem}
+.hname span{color:var(--pr)}
+.htitle{font-size:var(--lg);color:var(--mu);margin-bottom:1.25rem;line-height:1.4}
+.htitle strong{color:var(--tx);font-weight:600}
+.cts{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin-bottom:1.25rem}
+.ci{display:flex;align-items:center;gap:.4rem;font-size:var(--sm);color:var(--mu)}
+.ci:hover{color:var(--pr)}
+.ci svg{flex-shrink:0;color:var(--pr)}
+.hsum{font-size:var(--sm);color:var(--mu);max-width:60ch;line-height:1.75;margin-bottom:1rem}
+.avail{display:flex;align-items:center;gap:.5rem;font-size:var(--xs);font-weight:500;color:var(--pr)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--pr);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(1.35)}}
+/* STATS */
+.hst{display:flex;flex-direction:column;gap:.75rem;min-width:165px}
+@media(max-width:620px){.hst{flex-direction:row;flex-wrap:wrap;min-width:unset}}
+.st{background:var(--s2);border:1px solid var(--div);border-radius:var(--rlg);padding:1rem;text-align:right}
+@media(max-width:620px){.st{flex:1;min-width:110px;text-align:left}}
+.stn{font-size:var(--xl);font-weight:700;color:var(--tx);letter-spacing:-.02em;line-height:1;margin-bottom:2px;font-variant-numeric:tabular-nums}
+.stn span{color:var(--pr)}
+.stl{font-size:var(--xs);color:var(--mu);line-height:1.4}
+/* GRID */
+.grid{display:grid;grid-template-columns:1fr 286px;gap:1.5rem;align-items:start}
+@media(max-width:750px){.grid{grid-template-columns:1fr}}
+/* CARD */
+.card{background:var(--surface);border:1px solid var(--div);border-radius:var(--rxl);box-shadow:var(--sh1);padding:2rem;margin-bottom:1.5rem}
+.card:last-child{margin-bottom:0}
+/* SLABEL */
+.sl{font-size:var(--xs);font-family:var(--fm);font-weight:500;color:var(--pr);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.25rem;display:flex;align-items:center;gap:.75rem}
+.sl::after{content:'';flex:1;height:1px;background:var(--div)}
+/* PROJECT CARD */
+.pc{border:1px solid var(--div);border-radius:var(--rlg);overflow:hidden;margin-bottom:1.25rem;transition:box-shadow var(--tr),border-color var(--tr)}
+.pc:hover{box-shadow:var(--sh2);border-color:var(--pr)}
+.pc:last-child{margin-bottom:0}
+.phd{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.25rem 1.5rem 1rem;background:var(--s2);border-bottom:1px solid var(--div)}
+.ptit{font-size:var(--bs);font-weight:600;color:var(--tx);letter-spacing:-.01em;margin-bottom:2px;line-height:1.3}
+.pmet{font-size:var(--xs);color:var(--mu)}
+.plks{display:flex;align-items:center;gap:.4rem;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end}
+.lbtn{display:flex;align-items:center;gap:4px;font-size:var(--xs);font-weight:600;color:var(--pr);padding:3px .6rem;border:1px solid currentColor;border-radius:var(--rmd);white-space:nowrap}
+.lbtn:hover{background:var(--prl)}
+.pb{padding:1.25rem 1.5rem}
+.pdesc{font-size:var(--sm);color:var(--mu);line-height:1.75;margin-bottom:1rem;max-width:60ch}
+.pm{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-bottom:1rem}
+@media(max-width:480px){.pm{grid-template-columns:1fr 1fr}}
+.mv{background:var(--soff);border-radius:var(--rmd);padding:.75rem}
+.mvv{font-size:var(--bs);font-weight:700;color:var(--tx);letter-spacing:-.02em;line-height:1;margin-bottom:2px;font-variant-numeric:tabular-nums}
+.mvk{font-size:var(--xs);color:var(--mu);line-height:1.3}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem}
+/* EXPERIENCE */
+.xi{display:grid;grid-template-columns:18px 1fr;gap:0 1rem;margin-bottom:1.5rem}
+.xi:last-child{margin-bottom:0}
+.xtl{display:flex;flex-direction:column;align-items:center;padding-top:4px}
+.xd{width:10px;height:10px;border-radius:50%;background:var(--pr);flex-shrink:0;border:2px solid var(--surface);box-shadow:0 0 0 2px var(--pr)}
+.xl2{width:2px;flex:1;margin-top:.5rem;background:var(--div);min-height:20px}
+.xi:last-child .xl2{display:none}
+.xtit{font-size:var(--bs);font-weight:600;color:var(--tx);margin-bottom:1px}
+.xorg{font-size:var(--sm);color:var(--pr);font-weight:500;margin-bottom:2px}
+.xper{font-size:var(--xs);color:var(--fa);font-family:var(--fm);margin-bottom:.75rem}
+.xpts{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+.xpts li{font-size:var(--sm);color:var(--mu);line-height:1.65;padding-left:1rem;position:relative}
+.xpts li::before{content:'▸';position:absolute;left:0;color:var(--pr);font-size:.7em;top:.2em}
+/* EDUCATION */
+.edu{padding-left:1.25rem;margin-bottom:1.25rem;border-left:3px solid transparent;border-image:linear-gradient(to bottom,var(--pr),var(--ac)) 1}
+.edu:last-child{margin-bottom:0}
+.edeg{font-size:var(--bs);font-weight:600;color:var(--tx);margin-bottom:1px}
+.einst{font-size:var(--sm);color:var(--pr);font-weight:500;margin-bottom:2px}
+.eyr{font-size:var(--xs);color:var(--fa);font-family:var(--fm);margin-bottom:.5rem}
+.enote{font-size:var(--sm);color:var(--mu);line-height:1.6}
+/* SIDEBAR */
+.sidebar{display:flex;flex-direction:column;gap:1.25rem}
+.scard{background:var(--surface);border:1px solid var(--div);border-radius:var(--rxl);box-shadow:var(--sh1);padding:1.5rem}
+/* SKILL GROUPS */
+.sg{margin-bottom:1.25rem}
+.sg:last-child{margin-bottom:0}
+.sgl{font-size:var(--xs);font-weight:600;color:var(--fa);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem;font-family:var(--fm)}
+/* TAGS */
+.tag{display:inline-flex;align-items:center;font-size:var(--xs);font-weight:500;padding:3px .65rem;border-radius:var(--rfull);line-height:1.6}
+.tr{background:var(--crb);color:var(--cr)}
+.tt{background:var(--ctb);color:var(--ct)}
+.tw{background:var(--cwb);color:var(--cw)}
+.td{background:var(--cdb);color:var(--cd)}
+.tn{background:var(--cnb);color:var(--cn)}
+/* PROFICIENCY */
+.pl{display:flex;flex-direction:column;gap:.75rem}
+.pi{display:flex;align-items:center;justify-content:space-between}
+.pn{font-size:var(--sm);font-weight:500;color:var(--tx)}
+.dots{display:flex;gap:3px}
+.d{width:6px;height:6px;border-radius:50%;background:var(--div)}
+.d.on{background:var(--pr)}
+/* LANGUAGE */
+.li{margin-bottom:.75rem}
+.li:last-child{margin-bottom:0}
+.lr{display:flex;justify-content:space-between;margin-bottom:4px}
+.ln{font-size:var(--sm);font-weight:500;color:var(--tx)}
+.lv{font-size:var(--xs);color:var(--fa);font-family:var(--fm)}
+.bbg{height:4px;background:var(--div);border-radius:var(--rfull);overflow:hidden}
+.bar{height:100%;border-radius:var(--rfull);background:var(--pr)}
+/* CERT */
+.ci2{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.75rem;padding-bottom:.75rem;border-bottom:1px solid var(--div)}
+.ci2:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.cico{width:30px;height:30px;border-radius:var(--rmd);background:var(--prl);color:var(--pr);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ctit{font-size:var(--sm);font-weight:600;color:var(--tx);margin-bottom:1px;line-height:1.3}
+.corg{font-size:var(--xs);color:var(--mu)}
+.clnk{font-size:var(--xs);color:var(--pr);display:inline-block;margin-top:2px}
+.clnk:hover{text-decoration:underline}
+/* FOOTER */
+.rfoo{text-align:center;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--div);font-size:var(--xs);color:var(--fa);font-family:var(--fm)}
+.sro{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="tbl">
+    <svg class="logo" viewBox="0 0 28 28" fill="none" aria-label="AH">
+      <rect width="28" height="28" rx="7" fill="var(--pr)"/>
+      <text x="4" y="20" font-family="DM Sans,sans-serif" font-size="14" font-weight="700" fill="white">AH</text>
+    </svg>
+    <div>
+      <div class="tbname">Anas Mohd Haslan</div>
+      <div class="tbrole">Data Science · Analytics · Front-End Development</div>
+    </div>
+  </div>
+  <div class="tbr">
+    <button class="pbtn" onclick="window.print()">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Print / PDF
+    </button>
+    <button class="ibtn ttog" data-theme-toggle aria-label="Toggle dark mode">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="wrap">
+  <a href="#hero" class="sro">Skip to content</a>
+
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-label="Profile">
+    <div>
+      <h1 class="hname">Anas <span>Haslan</span></h1>
+      <p class="htitle"><strong>Data Science Professional</strong> &middot; IT Executive &middot; Front-End Developer</p>
+      <nav class="cts" aria-label="Contact">
+        <a href="tel:+601111229758" class="ci">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.85-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.56 16z"/></svg>
+          +6011-1122 9758
+        </a>
+        <a href="mailto:anashaslan@gmail.com" class="ci">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          anashaslan@gmail.com
+        </a>
+        <a href="https://github.com/anashaslan" target="_blank" rel="noopener noreferrer" class="ci">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          github.com/anashaslan
+        </a>
+        <a href="https://linkedin.com/in/anas-m-621136b8" target="_blank" rel="noopener noreferrer" class="ci">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin.com/in/anas-m-621136b8
+        </a>
+        <span class="ci">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Wilayah Persekutuan Putrajaya, Malaysia
+        </span>
+      </nav>
+      <p class="hsum">Results-driven Data Science professional specialising in software development, data analysis, and full-cycle data solutions. Highly proficient in Python, SQL, R, and Looker Studio with a proven ability to troubleshoot systems, perform complex data wrangling on large-scale datasets, and build analytical dashboards for diverse business stakeholders. Proactive and independent; seeking a challenging remote or hybrid role to deliver impactful insights and scalable data systems.</p>
+      <div class="avail"><span class="dot"></span>Open to remote / hybrid &mdash; Data Analyst &middot; Data Scientist &middot; Front-End Developer</div>
+    </div>
+    <aside class="hst" aria-label="Key metrics">
+      <div class="st"><div class="stn">8<span>+</span></div><div class="stl">Years professional experience</div></div>
+      <div class="st"><div class="stn">0.36<span>%</span></div><div class="stl">Best MAPE — thesis forecasting</div></div>
+      <div class="st"><div class="stn">118<span>mo</span></div><div class="stl">Longitudinal Twitch dataset</div></div>
+    </aside>
+  </section>
+
+  <div class="grid">
+    <div>
+
+      <!-- PROJECTS -->
+      <section class="card" aria-label="Projects">
+        <div class="sl">Key Academic Data Projects</div>
+
+        <article class="pc">
+          <div class="phd">
+            <div>
+              <div class="ptit">Twitch Streaming Analytics &amp; Multi-Tier Dashboard System</div>
+              <div class="pmet">Individual Project &middot; Looker Studio &middot; 10 years of data &middot; 24,000+ records</div>
+            </div>
+            <div class="plks">
+              <a href="https://tinyurl.com/ecommerce-db" target="_blank" rel="noopener noreferrer" class="lbtn">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Dashboard
+              </a>
+            </div>
+          </div>
+          <div class="pb">
+            <p class="pdesc">Designed and developed a hierarchical 4-tier visualisation dashboard in Looker Studio covering Executive, Regional Director, NA Manager, and EU Manager views. Engineered calculated fields and a robust Row-Level Security (RLS) model via data source separation to enforce region-specific access. Extracted actionable insights and crafted client-ready data narratives identifying key market shifts and operational performance alerts.</p>
+            <div class="pm">
+              <div class="mv"><div class="mvv">4-tier</div><div class="mvk">Dashboard hierarchy</div></div>
+              <div class="mv"><div class="mvv">RLS</div><div class="mvk">Row-Level Security</div></div>
+              <div class="mv"><div class="mvv">24K+</div><div class="mvk">Records analysed</div></div>
+            </div>
+            <div class="tags">
+              <span class="tag td">Looker Studio</span><span class="tag td">Row-Level Security</span><span class="tag tt">BI Dashboard</span><span class="tag tn">Data Storytelling</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc">
+          <div class="phd">
+            <div>
+              <div class="ptit">Time Series Forecasting of Twitch Live Viewership</div>
+              <div class="pmet">Master's Thesis &middot; UiTM Shah Alam &middot; Late 2025 &ndash; Early 2026</div>
+            </div>
+            <div class="plks">
+              <a href="https://github.com/anashaslan/twitch-viewership-analysis" target="_blank" rel="noopener noreferrer" class="lbtn">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+          <div class="pb">
+            <p class="pdesc">Analysed 118 months of longitudinal Twitch streaming data covering 2,594 unique games sourced from SullyGnome. Built and evaluated SARIMA and Prophet forecasting models with systematic residual diagnostics, generating 12-month predictive trajectories and 95% prediction intervals for the 3 consistently popular games identified.</p>
+            <div class="pm">
+              <div class="mv"><div class="mvv">0.36%</div><div class="mvk">Best MAPE (Prophet)</div></div>
+              <div class="mv"><div class="mvv">2,594</div><div class="mvk">Unique games</div></div>
+              <div class="mv"><div class="mvv">12-mo</div><div class="mvk">Forecast horizon</div></div>
+            </div>
+            <div class="tags">
+              <span class="tag tr">R Language</span><span class="tag tt">SARIMA</span><span class="tag tt">Prophet</span><span class="tag tr">ggplot2</span><span class="tag td">Time Series</span><span class="tag tn">SullyGnome</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc">
+          <div class="phd">
+            <div>
+              <div class="ptit">E-Commerce Revenue &amp; Operations Analytics Dashboard</div>
+              <div class="pmet">Group Project &middot; Looker Studio &middot; Multi-persona KPI design</div>
+            </div>
+            <div class="plks">
+              <a href="https://tinyurl.com/ecommerce-db" target="_blank" rel="noopener noreferrer" class="lbtn">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Dashboard
+              </a>
+            </div>
+          </div>
+          <div class="pb">
+            <p class="pdesc">Collaborated to map technical data dictionaries to business personas — Sales, Marketing, and Operations. Designed targeted KPIs and wireframes to optimise logistics performance and evaluate customer purchasing behaviour, translating data requirements into actionable operational dashboards.</p>
+            <div class="tags">
+              <span class="tag td">Looker Studio</span><span class="tag tt">KPI Design</span><span class="tag tn">Logistics Analytics</span><span class="tag tn">Data Storytelling</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="card" aria-label="Experience">
+        <div class="sl">Professional Experience</div>
+
+        <div class="xi">
+          <div class="xtl"><div class="xd"></div><div class="xl2"></div></div>
+          <div>
+            <div class="xtit">IT Executive</div>
+            <div class="xorg">Malaysia Rail Development Corporation (MRDC)</div>
+            <div class="xper">Jul 2023 &ndash; Mar 2025</div>
+            <ul class="xpts">
+              <li>Engineered and managed system maintenance schedules, troubleshooting issues to ensure optimal performance, security, and corporate website uptime.</li>
+              <li>Accelerated project timelines by revamping maintenance processes, demonstrating strong ownership and commencing work ahead of schedule.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="xi">
+          <div class="xtl"><div class="xd"></div><div class="xl2"></div></div>
+          <div>
+            <div class="xtit">Admin Manager</div>
+            <div class="xorg">Kopi Manual Enterprise</div>
+            <div class="xper">Aug 2021 &ndash; Jun 2023</div>
+            <ul class="xpts">
+              <li>Analysed daily operations and managed the end-to-end supply chain, ensuring seamless business continuity across all stakeholder levels.</li>
+              <li>Developed and maintained a centralised Excel-based tracking system for daily sales and expense datasets, creating clear data narratives for business decisions.</li>
+              <li>Designed a streamlined inventory management process that consistently met 95% of deadlines over two years.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="xi">
+          <div class="xtl"><div class="xd"></div><div class="xl2"></div></div>
+          <div>
+            <div class="xtit">Website Developer</div>
+            <div class="xorg">Universiti Teknologi MARA (UiTM)</div>
+            <div class="xper">Feb 2021 &ndash; Apr 2021</div>
+            <ul class="xpts">
+              <li>Spearheaded technical initiatives to troubleshoot and optimise website performance, enhancing speed, loading times, and traffic capacity.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="xi">
+          <div class="xtl"><div class="xd"></div><div class="xl2"></div></div>
+          <div>
+            <div class="xtit">Front-End Web Developer</div>
+            <div class="xorg">16TWO</div>
+            <div class="xper">Feb 2018 &ndash; Mar 2020</div>
+            <ul class="xpts">
+              <li>Developed responsive microsites and landing pages for high-profile clients, translating business requirements into working technical solutions.</li>
+              <li>Executed regular content and feature updates for a diverse client portfolio, collaborating to meet ongoing digital needs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="xi">
+          <div class="xtl"><div class="xd"></div><div class="xl2"></div></div>
+          <div>
+            <div class="xtit">Junior Developer</div>
+            <div class="xorg">Serv Technology</div>
+            <div class="xper">Apr 2017 &ndash; Feb 2018</div>
+            <ul class="xpts">
+              <li>Contributed to the development and deployment of a mobile application utilising React Native and Firebase.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="xi">
+          <div class="xtl"><div class="xd"></div><div class="xl2"></div></div>
+          <div>
+            <div class="xtit">Graphic Designer</div>
+            <div class="xorg">Generation Six Sdn Bhd</div>
+            <div class="xper">May 2015 &ndash; Dec 2015</div>
+            <ul class="xpts">
+              <li>Designed engaging e-content for academic lecturers using Microsoft PowerPoint, Adobe Photoshop, and Adobe Illustrator.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="card" aria-label="Education">
+        <div class="sl">Educational Background</div>
+        <div class="edu">
+          <div class="edeg">Master of Data Science (CDCS779)</div>
+          <div class="einst">Universiti Teknologi MARA (UiTM Shah Alam)</div>
+          <div class="eyr">2024 &ndash; 2026</div>
+          <div class="enote">Successfully completed Master's VIVA on 7 February 2026. Thesis: <em>"Trend Analysis and Forecasting of Live Viewership for Popular Games on Twitch."</em></div>
+        </div>
+        <div class="edu">
+          <div class="edeg">Bachelor of Computer Science (Hons) &mdash; Multimedia Computing</div>
+          <div class="einst">Universiti Teknologi MARA (UiTM Jasin)</div>
+          <div class="eyr">2012 &ndash; 2015</div>
+        </div>
+        <div class="edu">
+          <div class="edeg">Diploma in Computer Science</div>
+          <div class="einst">Universiti Teknologi MARA (UiTM Segamat)</div>
+          <div class="eyr">2010 &ndash; 2012</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Skills sidebar">
+
+      <div class="scard">
+        <div class="sl">Skills</div>
+        <div class="sg">
+          <div class="sgl">Data &amp; Programming</div>
+          <div class="tags"><span class="tag tr">Python</span><span class="tag tr">SQL (Advanced)</span><span class="tag tr">R (Advanced)</span><span class="tag tw">JavaScript</span><span class="tag tw">HTML / CSS</span></div>
+        </div>
+        <div class="sg">
+          <div class="sgl">Statistical &amp; Technical</div>
+          <div class="tags"><span class="tag tt">SARIMA</span><span class="tag tt">Prophet</span><span class="tag td">Time Series Analysis</span><span class="tag td">Statistical Forecasting</span><span class="tag tn">Data Pipeline Dev</span><span class="tag tn">RLS Implementation</span><span class="tag tn">System Troubleshooting</span></div>
+        </div>
+        <div class="sg">
+          <div class="sgl">Visualisations &amp; Tools</div>
+          <div class="tags"><span class="tag td">Looker Studio</span><span class="tag tr">ggplot2</span><span class="tag tn">Google Workspace</span><span class="tag tn">Microsoft Office</span></div>
+        </div>
+        <div class="sg">
+          <div class="sgl">Front-End Development</div>
+          <div class="tags"><span class="tag tw">React Native</span><span class="tag tw">Firebase</span><span class="tag tw">Responsive Design</span><span class="tag tn">Figma</span></div>
+        </div>
+      </div>
+
+      <div class="scard">
+        <div class="sl">Proficiency</div>
+        <div class="pl">
+          <div class="pi"><span class="pn">SQL</span><div class="dots"><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d on"></div></div></div>
+          <div class="pi"><span class="pn">R / Forecasting</span><div class="dots"><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d on"></div></div></div>
+          <div class="pi"><span class="pn">Python</span><div class="dots"><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d"></div></div></div>
+          <div class="pi"><span class="pn">Looker Studio</span><div class="dots"><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d"></div></div></div>
+          <div class="pi"><span class="pn">HTML / CSS / JS</span><div class="dots"><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d"></div></div></div>
+          <div class="pi"><span class="pn">React Native</span><div class="dots"><div class="d on"></div><div class="d on"></div><div class="d on"></div><div class="d"></div><div class="d"></div></div></div>
+        </div>
+      </div>
+
+      <div class="scard">
+        <div class="sl">Languages</div>
+        <div class="li"><div class="lr"><span class="ln">Bahasa Malaysia</span><span class="lv">Native</span></div><div class="bbg"><div class="bar" style="width:100%"></div></div></div>
+        <div class="li"><div class="lr"><span class="ln">English</span><span class="lv">Full Professional</span></div><div class="bbg"><div class="bar" style="width:88%"></div></div></div>
+      </div>
+
+      <div class="scard">
+        <div class="sl">Certifications</div>
+        <div class="ci2">
+          <div class="cico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+          <div>
+            <div class="ctit">Foundations of UX Design</div>
+            <div class="corg">Coursera &middot; Google</div>
+            <a href="https://tinyurl.com/coursera-ux-design" target="_blank" rel="noopener noreferrer" class="clnk">View Certificate &#8599;</a>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer class="rfoo">
+    <p>Anas Mohd Haslan &middot; anashaslan@gmail.com &middot; +6011-1122 9758 &middot; github.com/anashaslan &middot; April 2026</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  var d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  function si(th){
+    t.innerHTML=th==='dark'
+      ?'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      :'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    t.setAttribute('aria-label','Switch to '+(th==='dark'?'light':'dark')+' mode');
+  }
+  si(d);
+  t&&t.addEventListener('click',function(){d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);si(d);});
+  document.querySelectorAll('.stn').forEach(function(el,i){
+    el.style.cssText='opacity:0;transform:translateY(6px);transition:opacity .45s ease,transform .45s ease';
+    setTimeout(function(){el.style.opacity='1';el.style.transform='translateY(0)';},420+i*100);
+  });
+})();
+</script>
+</body>
+</html>
